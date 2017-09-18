@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszystkie</title>
+</head>
+<body>
+<section>
+    <div class="container">
+        <a href="/index" class="btn btndefault"><span class="glyphicon-hand-left glyphicon"></span>Przejdź do strony głównej</a>
+    </div>
+</section>
+
+<section>
+    <ul th:each="number: ${question}">
+         <li th:text="${number}"/>
+    </ul>
+</section>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezultat</title>
+</head>
+<body>
+<div class="container">
+    <a href="/index" class="btn btndefault"><span class="glyphicon-hand-left glyphicon"></span>Przejdź do strony głównej</a>
+</div>
+
+<ul th:each="n: ${results}">
+    <li th:text="${n}"/>
+</ul>
+
+</body>
+</html>

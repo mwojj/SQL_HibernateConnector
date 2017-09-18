@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+</head>
+<body>
+
+
+<div>
+    <!-- ============================================================================ -->
+    <!-- This content is only used for static prototyping purposes (natural templates)-->
+    <!-- and is therefore entirely optional, as this markup fragment will be included -->
+    <!-- from "fragments/header.html" at runtime.                                     -->
+    <!-- ============================================================================ -->
+
+</div>
+
+
+
+
+<p></p>
+<p>Podaj parametry do bazy danych:</p>
+
+<p>
+<form th:action="@{/added}" th:method="get">
+    <label>Name: </label>
+    <input type="text" name="name">
+
+<p>
+    <label>email: </label>
+    <input type="text" name="email">
+    <input type="submit">
+</p>
+    </form>
+
+
+<form th:action="@{/remove}" th:method="post">
+    <label>Usuń id: </label>
+    <input type="text" name="id">
+    <input type="submit">
+</form>
+
+<section>
+    <div class="container">
+        <a href="/all" class="btn btndefault"><span class="glyphicon-hand-left glyphicon"></span>Pokaż listę elementów</a>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <a href="/search" class="btn btndefault"><span class="glyphicon-hand-left glyphicon"></span>Wyszukaj</a>
+    </div>
+</section>
+<div class="container">
+    <div>&copy; Maciej Wojewódzki</div>
+</div>
+</body>
+</html>
